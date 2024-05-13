@@ -3,7 +3,7 @@ from openai import OpenAI
 from os import environ
 
 OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
-client = OpenAI(OpenAI_API_KEY)
+client = OpenAI(api_key=OpenAI_API_KEY)
 
 
 def get_english_transcription_from_english_youtube(video):
@@ -27,3 +27,4 @@ def get_english_transcription_from_english_youtube(video):
 url = "https://www.youtube.com/watch?v=lXbEixkHcgc"
 video = YouTube(url)
 transcription = get_english_transcription_from_english_youtube(video)
+print(transcription)
