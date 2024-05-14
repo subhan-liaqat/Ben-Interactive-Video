@@ -27,7 +27,7 @@ def AddVideoTranscription():
 
     payload = {}
     files = [
-        ("file", ("video_transcription", open("message.txt", "rb"), "application/txt"))
+        ("file", ("video_transcription", open("video_transcription.txt", "rb"), "application/txt"))
     ]
     headers = {
         "customer-id": "566695243",
@@ -48,7 +48,7 @@ def askQuestion(prompt):
         {
             "query": [
                 {
-                    "query": "Why are computers bad at math?",
+                    "query": prompt,
                     "start": 0,
                     "numResults": 3,
                     "contextConfig": {
@@ -80,12 +80,6 @@ def askQuestion(prompt):
 
 
 
-ResetCorpus()
-AddVideoTranscription()
+# ResetCorpus()
+# AddVideoTranscription()
 
-question = "Why are computers bad at math?"
-answer = askQuestion(question)
-
-
-
-print(answer)

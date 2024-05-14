@@ -1,6 +1,7 @@
 from pytube import YouTube
 from openai import OpenAI
 from os import environ
+import vectara
 
 OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OpenAI_API_KEY)
@@ -24,7 +25,23 @@ def get_english_transcription_from_english_youtube(video):
     return transcription.text
 
 
-url = "https://www.youtube.com/watch?v=lXbEixkHcgc"
+url = "https://www.youtube.com/watch?v=JDSn2MuZUJI"
 video = YouTube(url)
 transcription = get_english_transcription_from_english_youtube(video)
+
 print(transcription)
+
+# Write transcription to file
+with open("video_transcription.txt", "w") as file:
+    file.write(transcription)
+
+print("Text has been written to video_transcription.txt")
+
+
+vectara.ResetCorpus()
+vectara.AddVideoTranscription()
+
+question = "What is her sidehustle?"
+answer = vectara.askQuestion(question)
+
+print(answer)
