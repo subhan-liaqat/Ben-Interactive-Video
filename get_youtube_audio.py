@@ -13,13 +13,17 @@ def prepForVectara():
     vectara.ResetCorpus()
     vectara.AddVideoTranscription()
 
-
 def get_english_transcription_from_english_youtube(url, language):
     video = YouTube(url)
     try:
         stream = video.streams.filter(only_audio=True).first()
         stream.download(filename=f"input_video.mp3")
         print("The video is downloaded in MP3")
+        video_length = video.length
+        print(f"The video length is {video_length} seconds")
+        if video_length > 600:
+            print("The video is too long. Please provide a video of 10 minutes or less.")
+            return
     except KeyError:
         print(
             "Unable to fetch video information. Please check the video URL or your network connection."
@@ -32,6 +36,9 @@ def get_english_transcription_from_english_youtube(url, language):
 
     english_transcription = transcription.text
     yoruba_transcription = google_translate.translate_english_to_yoruba(
+        english_transcription
+    )
+    french_transcription = google_translate.translate_to_french(
         english_transcription
     )
 
@@ -49,10 +56,14 @@ def get_english_transcription_from_english_youtube(url, language):
     elif language == "Yoruba":
         return yoruba_transcription
 
+    elif language == "French":
+        return french_transcription
+
 
 def askQuestionAboutVideo(prompt, language):
     english_answer = vectara.askQuestion(prompt)
     yoruba_answer = google_translate.translate_english_to_yoruba(english_answer)
+    french_answer = google_translate.translate_to_french(english_answer)
 
     print(language)
     if language == "English":
@@ -60,3 +71,6 @@ def askQuestionAboutVideo(prompt, language):
 
     elif language == "Yoruba":
         return yoruba_answer
+
+    elif language == "French":
+        return french_answer
