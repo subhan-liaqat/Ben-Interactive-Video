@@ -1,6 +1,4 @@
 import io
-from google.oauth2 import service_account
-from google.cloud import speech
 from google.cloud import translate_v2 as translate
 import os
 from os import environ
