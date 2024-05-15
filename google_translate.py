@@ -44,5 +44,5 @@ def translate_english_to_yoruba(text):
     return output
 
 
-# yoruba = translate_english_to_yoruba("Why do computers suck at math?")
-# print(yoruba)
+yoruba = translate_english_to_yoruba("Benin Interactive Video")
+print(yoruba)

@@ -13,7 +13,8 @@ def prepForVectara():
     vectara.ResetCorpus()
     vectara.AddVideoTranscription()
 
-def get_english_transcription_from_english_youtube(url):
+
+def get_english_transcription_from_english_youtube(url, language):
     video = YouTube(url)
     try:
         stream = video.streams.filter(only_audio=True).first()
@@ -30,26 +31,32 @@ def get_english_transcription_from_english_youtube(url):
     )
 
     english_transcription = transcription.text
-    yoruba_transcription = google_translate.translate_english_to_yoruba(english_transcription)
+    yoruba_transcription = google_translate.translate_english_to_yoruba(
+        english_transcription
+    )
 
     # Write transcription to file
     with open("video_transcription.txt", "w", encoding="utf-8") as file:
         file.write(yoruba_transcription)
-    
+
     print("Text has been written to video_transcription.txt")
 
     prepForVectara()
-    
 
-    return yoruba_transcription
+    if language == "English":
+        return english_transcription
+
+    elif language == "Yoruba":
+        return yoruba_transcription
 
 
-def askQuestionAboutVideo(prompt):
-    english_answer =  vectara.askQuestion(prompt)
+def askQuestionAboutVideo(prompt, language):
+    english_answer = vectara.askQuestion(prompt)
     yoruba_answer = google_translate.translate_english_to_yoruba(english_answer)
-    return yoruba_answer
 
+    print(language)
+    if language == "English":
+        return english_answer
 
-
-
-
+    elif language == "Yoruba":
+        return yoruba_answer

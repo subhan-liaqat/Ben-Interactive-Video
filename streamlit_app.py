@@ -26,7 +26,7 @@ def main():
 
     if st.button("Upload Video"):
         if url:
-            transcription = get_youtube_audio.get_english_transcription_from_english_youtube(url)
+            transcription = get_youtube_audio.get_english_transcription_from_english_youtube(url, language)
             st.session_state['video_url'] = url
             st.session_state['transcription'] = transcription
         else:
@@ -58,7 +58,7 @@ def main():
     # Check if the form has been submitted
     if submit_button:
         if question:
-            answer = get_youtube_audio.askQuestionAboutVideo(question)
+            answer = get_youtube_audio.askQuestionAboutVideo(question, language)
             st.write(answer)
         else:
             st.warning("Please enter a question.")
