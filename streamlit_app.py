@@ -12,6 +12,11 @@ client = OpenAI(api_key=OpenAI_API_KEY)
 
 def main():
     st.title("Interactive Video")
+
+    st.sidebar.title("Select Translation Language")
+    language = st.sidebar.selectbox("Select Language", ["English", "Yoruba"])
+
+    videoholder = st.empty()
     url = st.text_input("Enter the URL of the YouTube video")
 
     if 'video_url' not in st.session_state:
@@ -28,11 +33,12 @@ def main():
             st.write("Please enter a valid YouTube video URL.")
     
     if st.session_state['video_url']:
-        videoholder = st.empty()
         videoholder.video(st.session_state['video_url'])
         if st.session_state['transcription']:
-            st.write("Transcription:")
-            st.write(st.session_state['transcription'])
+            # st.write("Transcription:")
+            with st.expander("Transcription:", expanded=False):
+                st.write(st.session_state['transcription'])
+            st.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! \n English: Your video has been made interactive, ask questions about it!", icon="❔")
         else:
             st.write("Failed to fetch transcription.")
     
