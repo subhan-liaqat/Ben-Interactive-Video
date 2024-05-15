@@ -11,19 +11,33 @@ OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OpenAI_API_KEY)
 
 def main():
-    st.title("Interactive Video")
-    st.write("which language do you want to translate to?")
+    st.title("Interactive Video 🎥")
+    which_lang = st.empty()
+    which_lang = st.write("which language do you want to translate to? 🌍")
+    st.write("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! 🇳🇬")
+
+    st.write("YoRuba: Tumọ si:")
+
     language = st.selectbox("Translate to:", ["English", "Yoruba"])
 
     videoholder = st.empty()
-    url = st.text_input("Enter the URL of the YouTube video")
+    if language == "English":
+        url_input_box = "Enter the URL of the YouTube video"
+    else:
+        url_input_box = "Tẹ URL ti fidio YouTube sii"
+    url = st.text_input(url_input_box)
 
     if 'video_url' not in st.session_state:
         st.session_state['video_url'] = None
     if 'transcription' not in st.session_state:
         st.session_state['transcription'] = None
 
-    if st.button("Upload Video"):
+    if language == "English":
+        upload_button_text = "Upload Video"
+    else:
+        upload_button_text = "Gbe fidio"
+
+    if st.button(upload_button_text):
         if url:
             transcription = get_youtube_audio.get_english_transcription_from_english_youtube(url, language)
             st.session_state['video_url'] = url
@@ -53,11 +67,19 @@ def main():
         # Place the text input and the button within the form
         col1, col2 = st.columns([5, 1])
         with col1:
-            question = st.text_input("Ask a question:")
+            if language == "English":
+                question_text = "✋🏿 Ask a question:"
+            else:
+                question_text = "✋🏿 Beere ibeere kan:"
+            question = st.text_input(question_text)
         with col2:
             st.write(" ")
             st.write(" ")
-            submit_button = st.form_submit_button(label="Submit")
+            if language == "English":
+                submit_label = "Submit"
+            else:
+                submit_label = "Fi silẹ"
+            submit_button = st.form_submit_button(label=submit_label)
 
     # Check if the form has been submitted
     if submit_button:
