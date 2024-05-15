@@ -16,3 +16,5 @@ tqdm==4.66.4
 typing_extensions==4.11.0
 streamlit
 streamlit_extras
+google-cloud-translate
+google-cloud
