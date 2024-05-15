@@ -61,17 +61,17 @@ def main():
             with st.expander("Transcription:", expanded=False):
                 st.write(st.session_state['transcription'])
             # st.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! \n English: Your video has been made interactive, ask questions about it!", icon="❔")
-            Warning = st.empty()
+            Warning_holder = st.empty()
         else:
             st.write("Failed to fetch transcription.")
 
 
-    if language == "English":
-        Warning.warning("Your video has been made interactive, ask questions about it!", icon='❔')                    
-    elif language == "Yoruba":
-        Warning.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ!", icon='❔')
-    elif language == "French":
-        Warning.warning("Français: Votre vidéo a été rendue interactive, posez des questions à ce sujet!", icon='❔')
+        if language == "English":
+            Warning_holder.warning("Your video has been made interactive, ask questions about it!", icon='❔')                    
+        elif language == "Yoruba":
+            Warning_holder.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ!", icon='❔')
+        elif language == "French":
+            Warning_holder.warning("Français: Votre vidéo a été rendue interactive, posez des questions à ce sujet!", icon='❔')
     
     question_slot = st.empty()
     answer_slot = st.empty()
