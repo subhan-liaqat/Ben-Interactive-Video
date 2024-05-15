@@ -1,2 +1,4 @@
 .env*
 .streamlit
+gsc_creds.json*
+gsc_creds.json

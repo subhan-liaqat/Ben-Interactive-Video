@@ -2,6 +2,7 @@ from pytube import YouTube
 from openai import OpenAI
 from os import environ
 import vectara
+import google_translate
 import streamlit as st
 
 OpenAI_API_KEY = st.secrets["OPENAI_API_KEY"]
@@ -28,20 +29,25 @@ def get_english_transcription_from_english_youtube(url):
         model="whisper-1", file=audio_file
     )
 
-    result = transcription.text
+    english_transcription = transcription.text
+    yoruba_transcription = google_translate.translate_english_to_yoruba(english_transcription)
 
     # Write transcription to file
-    with open("video_transcription.txt", "w") as file:
-        file.write(result)
+    with open("video_transcription.txt", "w", encoding="utf-8") as file:
+        file.write(yoruba_transcription)
     
     print("Text has been written to video_transcription.txt")
 
     prepForVectara()
-    return result
+    
+
+    return yoruba_transcription
 
 
 def askQuestionAboutVideo(prompt):
-    return vectara.askQuestion(prompt)
+    english_answer =  vectara.askQuestion(prompt)
+    yoruba_answer = google_translate.translate_english_to_yoruba(english_answer)
+    return yoruba_answer
 
 
 
