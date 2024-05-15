@@ -78,8 +78,3 @@ def askQuestion(prompt):
 
     return RawAnswer
 
-
-
-# ResetCorpus()
-# AddVideoTranscription()
-

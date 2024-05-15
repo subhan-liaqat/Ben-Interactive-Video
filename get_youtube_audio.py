@@ -7,7 +7,12 @@ OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OpenAI_API_KEY)
 
 
-def get_english_transcription_from_english_youtube(video):
+def prepForVectara():
+    vectara.ResetCorpus()
+    vectara.AddVideoTranscription()
+
+def get_english_transcription_from_english_youtube(url):
+    video = YouTube(url)
     try:
         stream = video.streams.filter(only_audio=True).first()
         stream.download(filename=f"input_video.mp3")
@@ -22,26 +27,22 @@ def get_english_transcription_from_english_youtube(video):
         model="whisper-1", file=audio_file
     )
 
-    return transcription.text
+    result = transcription.text
+
+    # Write transcription to file
+    with open("video_transcription.txt", "w") as file:
+        file.write(result)
+    
+    print("Text has been written to video_transcription.txt")
+
+    prepForVectara()
+    return result
 
 
-url = "https://www.youtube.com/watch?v=JDSn2MuZUJI"
-video = YouTube(url)
-transcription = get_english_transcription_from_english_youtube(video)
-
-print(transcription)
-
-# Write transcription to file
-with open("video_transcription.txt", "w") as file:
-    file.write(transcription)
-
-print("Text has been written to video_transcription.txt")
+def askQuestionAboutVideo(prompt):
+    return vectara.askQuestion(prompt)
 
 
-vectara.ResetCorpus()
-vectara.AddVideoTranscription()
 
-question = "What is her sidehustle?"
-answer = vectara.askQuestion(question)
 
-print(answer)
+
