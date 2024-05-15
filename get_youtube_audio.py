@@ -2,8 +2,9 @@ from pytube import YouTube
 from openai import OpenAI
 from os import environ
 import vectara
+import streamlit as st
 
-OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
+OpenAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=OpenAI_API_KEY)
 
 

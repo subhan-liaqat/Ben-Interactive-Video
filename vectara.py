@@ -13,7 +13,7 @@ def ResetCorpus():
     headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "x-api-key": "zut_IccVS9aWrgH6-s9K--BKSt9pVfYKgClXR8j3cg",
+        "x-api-key": api_key,
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
@@ -32,7 +32,7 @@ def AddVideoTranscription():
     headers = {
         "customer-id": "566695243",
         "Accept": "application/json",
-        "x-api-key": "zut_IccVS9aWrgH6-s9K--BKSt9pVfYKgClXR8j3cg",
+        "x-api-key": api_key,
     }
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
@@ -67,7 +67,7 @@ def askQuestion(prompt):
         "Content-Type": "application/json",
         "Accept": "application/json",
         "customer-id": "566695243",
-        "x-api-key": "zut_IccVS9aWrgH6-s9K--BKSt9pVfYKgClXR8j3cg",
+        "x-api-key": api_key,
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
