@@ -69,6 +69,7 @@ def main():
                 st.write(st.session_state["transcription"])
             # st.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! \n English: Your video has been made interactive, ask questions about it!", icon="❔")
             Warning_holder = st.empty()
+            Warning_holder = st.empty()
         else:
             st.write("Failed to fetch transcription.")
 
