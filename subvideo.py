@@ -75,6 +75,7 @@ def Translate_srt(target_language):
     for sub in subs:
         translatedSub = translate_english_to(sub.text, target_language)
         sub.text = translatedSub.replace('&#39;', "'")
+        # print(sub.text)
 
     subs.save(output_srt, encoding="utf8")
 

@@ -21,3 +21,4 @@ google-cloud
 pysrt
 ffmpeg-python
 pydub
+moviepy
