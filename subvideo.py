@@ -2,7 +2,7 @@ from pytube import YouTube
 from openai import OpenAI
 from os import environ
 import streamlit as st
-from pydub import AudioSegment
+# from pydub import AudioSegment
 import pysrt
 import ffmpeg
 import os

@@ -18,3 +18,5 @@ streamlit
 streamlit_extras
 google-cloud-translate
 google-cloud
+pysrt
+ffmpeg-python
