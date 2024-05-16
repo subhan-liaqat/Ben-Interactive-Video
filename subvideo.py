@@ -59,7 +59,7 @@ def Create_SRT():
         transcription = client.audio.transcriptions.create(
             model="whisper-1", file=audio_file, response_format="srt"
         )
-    with open("temp/transcript.srt", "w") as transcript_file:
+    with open("temp/transcript.srt", "w", encoding="utf8") as transcript_file:
         transcript_file.write(transcription)
 
     print("Created English Transcript")
@@ -70,13 +70,13 @@ def Translate_srt(target_language):
     input_srt = "temp/transcript.srt"
     output_srt = "temp/translated.srt"
 
-    subs = pysrt.open(input_srt, encoding="ISO-8859-1")
+    subs = pysrt.open(input_srt, encoding="utf8")
 
     for sub in subs:
         translatedSub = translate_english_to(sub.text, target_language)
-        sub.text = translatedSub
+        sub.text = translatedSub.replace('&#39;', "'")
 
-    subs.save(output_srt, encoding="ISO-8859-1")
+    subs.save(output_srt, encoding="utf8")
 
     print("Created Translated SRT")
 

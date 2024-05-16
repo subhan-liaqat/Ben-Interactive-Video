@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:03,000
+Cette vidéo est...
+
+2
+00:00:03,000 --> 00:00:04,000
+30 secondes.
+
+3
+00:00:04,000 --> 00:00:04,500
+Qu'est ce que c'est?
+
+4
+00:00:04,500 --> 00:00:05,500
+Cela dure 30 secondes.
+
+5
+00:00:05,500 --> 00:00:07,000
+Nous n'avons pas le temps de nous entendre
+
+6
+00:00:07,000 --> 00:00:08,500
+parce que ça dure 30 secondes.
+
+7
+00:00:08,500 --> 00:00:10,000
+Vous avez tous beaucoup de choses à faire.
+
+8
+00:00:10,000 --> 00:00:11,500
+C'est pour ça que je suis court avec toi.
+
+9
+00:00:11,500 --> 00:00:14,500
+Alors j'ai décidé de ne pas t'ennuyer
+
+10
+00:00:14,500 --> 00:00:16,000
+en étant d'une durée de 30 secondes.
+
+11
+00:00:16,000 --> 00:00:17,500
+Oui, cela dure 30 secondes.
+
+12
+00:00:17,500 --> 00:00:19,000
+Nous n'avons pas le temps de porter un string
+
+13
+00:00:19,000 --> 00:00:20,500
+ou fumer un bang ou jouer au ping-pong.
+
+14
+00:00:20,500 --> 00:00:22,000
+C'est vrai peu importe ce que je fais
+
+15
+00:00:22,000 --> 00:00:23,500
+ou ce que je souhaite vous dire.
+
+16
+00:00:23,500 --> 00:00:25,000
+C'est pour rien parce que tu vois
+
+17
+00:00:25,000 --> 00:00:28,000
+les limites qui m'ont été imposées
+
+18
+00:00:28,000 --> 00:00:29,500
+d'une durée de 30 secondes.
+
+19
+00:00:29,500 --> 00:00:30,500
+Oh!
+
