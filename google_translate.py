@@ -86,11 +86,11 @@ def translate_english_to(text, countryISO='yo'):
 # yoruba = translate_english_to_yoruba("Benin Interactive Video")
 # print(yoruba)
 
-french = translate_to_french("Benin Interactive Video")
-print(french)
+# french = translate_to_french("Benin Interactive Video")
+# print(french)
 
-english = translate_to_english(yoruba)
-print(english)
+# english = translate_to_english(yoruba)
+# print(english)
 
 
 # french = translate_to_french("Benin Interactive Video")
