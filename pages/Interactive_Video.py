@@ -42,6 +42,12 @@ def main():
     if "transcription" not in st.session_state:
         st.session_state["transcription"] = None
 
+    if url:
+        st.session_state["video_url"] = url
+
+    if st.session_state["video_url"]:
+        videoholder.video(st.session_state["video_url"])
+
     if language == "English":
         upload_button_text = "Upload Video"
     elif language == "Yoruba":
@@ -68,11 +74,12 @@ def main():
             with st.expander("Transcription:", expanded=False):
                 st.write(st.session_state["transcription"])
             # st.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! \n English: Your video has been made interactive, ask questions about it!", icon="❔")
-            Warning_holder = st.empty()
-            Warning_holder = st.empty()
         else:
             st.write("Failed to fetch transcription.")
 
+        Warning_holder = st.empty()
+
+    if st.session_state["transcription"]:
         if language == "English":
             Warning_holder.warning(
                 "Your video has been made interactive, ask questions about it!",

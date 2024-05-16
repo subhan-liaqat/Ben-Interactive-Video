@@ -39,6 +39,12 @@ def main():
     if "completed" not in st.session_state:
         st.session_state["completed"] = False
 
+    if url:
+        st.session_state["video_url"] = url
+
+    if st.session_state["video_url"]:
+        videoholder.video(st.session_state["video_url"])
+
     if language == "English":
         upload_button_text = "Upload Video"
     elif language == "Yoruba":
