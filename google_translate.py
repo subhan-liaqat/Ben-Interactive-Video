@@ -37,6 +37,25 @@ client_file = "gsc_creds.json"
 environ["GOOGLE_APPLICATION_CREDENTIALS"] = client_file
 
 
+def translate_english_to_yoruba(text):
+    translate_client = translate.Client()
+    target = "yo"
+    output = translate_client.translate(text, target_language=target)["translatedText"]
+    return output
+
+def translate_to_french(text):
+    translate_client = translate.Client()
+    target = "fr"
+    output = translate_client.translate(text, target_language=target)["translatedText"]
+    return output
+
+def translate_to_english(text):
+    translate_client = translate.Client()
+    target = "en"
+    output = translate_client.translate(text, target_language=target)["translatedText"]
+    return output
+
+# Translates to any language, pass language as paramter: fr, yo, en
 def translate_english_to(text, countryISO='yo'):
     translate_client = translate.Client()
     target = countryISO
@@ -44,5 +63,14 @@ def translate_english_to(text, countryISO='yo'):
     return output
 
 
-# yoruba = translate_english_to("Awọn abajade wiwa ti pese awọn oye sinu itan kan ti o kan eniyan kan ti a npè ni Liz ti o yi ipadabọ ẹgbẹ rẹ pada si iṣowo aṣeyọri, Atunṣe Ajọpọ, aaye iṣẹlẹ iṣẹlẹ ti o ṣẹda ni Brooklyn, New York. Liz dojukọ lori kikọ agbegbe ẹda nipasẹ ọpọlọpọ awọn iṣẹlẹ iṣẹ ọna ati awọn ifowosowopo, gẹgẹbi Knit Club pẹlu Ella Emhoff. Iṣowo yii ti jẹ ere ti olowo, pẹlu Liz ti n mu owo-wiwọle pataki wa lati igba ti o bẹrẹ iṣowo ni Oṣu Kẹta to kọja [3]. Irin-ajo Liz ṣe afihan bi ijakadi ẹgbẹ kan ṣe le yipada si iṣẹ ala, ti n tẹnu mọ pataki ti ẹda, agbegbe, ati iṣowo ni ṣiṣe aṣeyọri [2].", 'en')
+
+# yoruba = translate_english_to_yoruba("Benin Interactive Video")
 # print(yoruba)
+
+# french = translate_to_french("Benin Interactive Video")
+# print(french)
+
+# english = translate_to_english(yoruba)
+# print(english)
+
+
