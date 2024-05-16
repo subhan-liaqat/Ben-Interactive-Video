@@ -12,7 +12,7 @@ client = OpenAI(api_key=OpenAI_API_KEY)
 
 def main():
 
- 
+    st.set_page_config(page_title="Interactive Video", page_icon="🎥")
 
     st.title("Interactive Video 🎥")
     # which_lang = st.empty()
