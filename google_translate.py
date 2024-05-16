@@ -68,7 +68,6 @@ def translate_english_to(text, countryISO='yo'):
     output = translate_client.translate(text, target_language=target)["translatedText"]
     return output
 
+# yoruba = translate_english_to_yoruba("Benin Interactive Video")
+# print(yoruba)
 
-
-answer =translate_english_to_yoruba("Why are computers bad at math?")
-print(answer)

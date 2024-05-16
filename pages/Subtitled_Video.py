@@ -14,7 +14,7 @@ toCountrISO = {"English": "en", "Yoruba": "yo", "French": "fr"}
 
 def main():
 
- 
+    st.set_page_config(page_title="Sub/Dub Video", page_icon="📺")
 
     st.title("Subtitle Video")
 
@@ -36,6 +36,8 @@ def main():
         st.session_state["video_url"] = None
     if "transcription" not in st.session_state:
         st.session_state["transcription"] = None
+    if "completed" not in st.session_state:
+        st.session_state["completed"] = False
 
     if language == "English":
         upload_button_text = "Upload Video"
@@ -57,41 +59,46 @@ def main():
             if translation_choice == "Dubbed":
                 subvideo.create_dubbed_video(url, toCountrISO[language])
                 st.video('./temp_dub/dubbed_video.mp4')
+                st.session_state["completed"] = True
             elif translation_choice == "Dubbed and Subbed":
                 subvideo.create_subbed_and_dubbed_video(url, toCountrISO[language])
                 st.video('./temp_dub/dubbed_video.mp4')
+                st.session_state["completed"] = True
             elif translation_choice == "Subtitles":
                 subvideo.create_subbed_video(url, toCountrISO[language])
                 st.video('./temp/output_subbed.mp4')
+                st.session_state["completed"] = True
 
            
         else:
             st.write("Please enter a valid YouTube video URL.")
 
     if st.session_state["video_url"]:
-        videoholder.video(st.session_state["video_url"])
+        youtubeurl = st.session_state["video_url"]
+        videoholder.video(youtubeurl)
+        print("Video URL: ", youtubeurl)
         Warning_holder = st.empty()
 
-        Warning_holder.warning(
-            "Your video has been subbed, enjoy!",
-            icon="❔",
-        )
-    
-        # if language == "English":
-        #     Warning_holder.warning(
-        #         "Your video has been subbed, enjoy!",
-        #         icon="❔",
-        #     )
-        # elif language == "Yoruba":
-        #     Warning_holder.warning(
-        #         "Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ!",
-        #         icon="❔",
-        #     )
-        # elif language == "French":
-        #     Warning_holder.warning(
-        #         "Français: Votre vidéo a été rendue interactive, posez des questions à ce sujet!",
-        #         icon="❔",
-        #     )
+        # Warning_holder.warning(
+        #     "Your video has been subbed, enjoy!",
+        #     icon="❔",
+        # )
+        if st.session_state["completed"]:
+            if language == "English":
+                Warning_holder.warning(
+                    "Your video has been processed, enjoy!",
+                    icon="🙂",
+                )
+            elif language == "Yoruba":
+                Warning_holder.warning(
+                    "Yoruba: Fidio rẹ ti ni ilọsiwaju, gbadun!",
+                    icon="🙂",
+                )
+            elif language == "French":
+                Warning_holder.warning(
+                    "French: Votre vidéo a été traitée, profitez-en !",
+                    icon="🙂",
+                )
 
 if __name__ == "__main__":
     main()
