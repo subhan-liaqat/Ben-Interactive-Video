@@ -1,193 +1,77 @@
 1
-00:00:00,000 --> 00:00:04,000
-Europe, let's come together!
+00:00:00,000 --> 00:00:03,000
+This video is...
 
 2
-00:00:04,000 --> 00:00:07,000
-Europe-pa-pa, Europe-pa-pa
+00:00:03,000 --> 00:00:04,000
+30 seconds long.
 
 3
-00:00:07,000 --> 00:00:09,000
-It's now or never!
+00:00:04,000 --> 00:00:04,500
+What's that?
 
 4
-00:00:11,000 --> 00:00:13,000
-Apa, Europe-pa-pa
+00:00:04,500 --> 00:00:05,500
+It's 30 seconds long.
 
 5
-00:00:13,000 --> 00:00:16,000
-Welkom in Europa, blijf hier tot ik dood ga
+00:00:05,500 --> 00:00:07,000
+We don't have time to get along
 
 6
-00:00:16,000 --> 00:00:19,000
-Europe-pa-pa, Europe-pa-pa
+00:00:07,000 --> 00:00:08,500
+because it's 30 seconds long.
 
 7
-00:00:19,000 --> 00:00:22,000
-Welkom in Europa, blijf hier tot ik dood ga
+00:00:08,500 --> 00:00:10,000
+You all have many things to do.
 
 8
-00:00:22,000 --> 00:00:25,000
-Europe-pa-pa, Europe-pa-pa
+00:00:10,000 --> 00:00:11,500
+That's why I'm being short with you.
 
 9
-00:00:25,000 --> 00:00:28,000
-Bezoek m'n friends in France, of neem de benen naar wenen
+00:00:11,500 --> 00:00:14,500
+So I've decided not to bore you
 
 10
-00:00:28,000 --> 00:00:31,000
-Ik wil weg uit Netherlands, maar m'n paspoort is verdwenen
+00:00:14,500 --> 00:00:16,000
+by being 30 seconds long.
 
 11
-00:00:31,000 --> 00:00:34,000
-Heb gelukkig geen visum nodig om bij je te zijn
+00:00:16,000 --> 00:00:17,500
+Yes, this is 30 seconds long.
 
 12
-00:00:34,000 --> 00:00:37,000
-Dus neem de bus naar Polen of de trein naar Berlin
+00:00:17,500 --> 00:00:19,000
+We don't have time to wear a thong
 
 13
-00:00:37,000 --> 00:00:40,000
-Ik heb geen geld voor Parijs, dus gebruik m'n fantasie
+00:00:19,000 --> 00:00:20,500
+or smoke a bong or play ping pong.
 
 14
-00:00:40,000 --> 00:00:43,000
-Heb je een eurootje, please? Zeg merci en alsjeblieft
+00:00:20,500 --> 00:00:22,000
+It's true no matter what I do
 
 15
-00:00:43,000 --> 00:00:46,000
-Ik ben in alles kwijt, behalve de tijd
+00:00:22,000 --> 00:00:23,500
+or what I wish to say to you.
 
 16
-00:00:46,000 --> 00:00:49,000
-Dus ik ben elke dag op reis, want de wereld is van mij
+00:00:23,500 --> 00:00:25,000
+It's all for naught because you see
 
 17
-00:00:49,000 --> 00:00:52,000
-Welkom in Europa, blijf hier tot ik dood ga
+00:00:25,000 --> 00:00:28,000
+the limitations set on me
 
 18
-00:00:52,000 --> 00:00:55,000
-Europe-pa-pa, Europe-pa-pa
+00:00:28,000 --> 00:00:29,500
+of being 30 seconds long.
 
 19
-00:00:55,000 --> 00:00:58,000
-Welkom in Europa, blijf hier tot ik dood ga
-
-20
-00:00:58,000 --> 00:01:01,000
-Europe-pa-pa, Europe-pa-pa
-
-21
-00:01:01,000 --> 00:01:04,000
-Europe-pa-pa-pa-pa-pa-pa
-
-22
-00:01:04,000 --> 00:01:07,000
-Europe-pa-pa-pa
-
-23
-00:01:07,000 --> 00:01:10,000
-Europe-pa-pa-pa-pa-pa-pa
-
-24
-00:01:10,000 --> 00:01:13,000
-U-RO-PA
-
-25
-00:01:13,000 --> 00:01:16,000
-Ik ben in Duitsland, abit, ik ben zo all-in
-
-26
-00:01:16,000 --> 00:01:19,000
-Iozono in Italië, ja, maar toch doet het pijn
-
-27
-00:01:19,000 --> 00:01:22,000
-Ben aan het vluchten van mezelf, voel de hele dag omheld
-
-28
-00:01:22,000 --> 00:01:25,000
-Ja, ik geef zelfs mensen geld, maar er is niemand die me helpt
-
-29
-00:01:25,000 --> 00:01:28,000
-Ik hoef geen escargots, hoef geen vissen en chips
-
-30
-00:01:28,000 --> 00:01:31,000
-Hoef geen pael, ja, no, ik weet niet eens echt wat dat is
-
-31
-00:01:31,000 --> 00:01:34,000
-Zet de radio aan, ik hoor Stromae met papa Ute
-
-32
-00:01:34,000 --> 00:01:37,000
-Zal niet stoppen tot ze zeggen ja, ja, dat doet ie goed, he
-
-33
-00:01:37,000 --> 00:01:40,000
-Welkom in Europa, blijf hier tot ik dood ga
-
-34
-00:01:40,000 --> 00:01:43,000
-Europe-pa-pa, Europe-pa-pa
-
-35
-00:01:43,000 --> 00:01:46,000
-Welkom in Europa, blijf hier tot ik dood ga
-
-36
-00:01:46,000 --> 00:01:49,000
-Europe-pa-pa, Europe-pa-pa
-
-37
-00:01:49,000 --> 00:01:52,000
-Europa-pa-pa-pa-pa-pa-pa
-
-38
-00:01:52,000 --> 00:01:55,000
-Europa-pa-pa-pa, hey
-
-39
-00:01:55,000 --> 00:01:58,000
-Europa-pa-pa-pa-pa-pa-pa
-
-40
-00:01:58,000 --> 00:02:01,000
-U-RO-PA
-
-41
-00:02:01,000 --> 00:02:04,000
-Europa-pa-pa-pa-pa-pa-pa
-
-42
-00:02:04,000 --> 00:02:07,000
-Pa-pa-pa- pa-pa-pa-pa-pa
-
-43
-00:02:07,000 --> 00:02:10,000
-Pa-pa-pa- pa-pa-pa-pa-pa
-
-44
-00:02:10,000 --> 00:02:13,000
-Pa-pa-pa- pa-pa-pa-pa
-
-45
-00:02:13,000 --> 00:02:16,000
-Welkom in Europa, jongen
-
-46
-00:02:20,000 --> 00:02:22,000
-Bis
-
-47
-00:02:32,000 --> 00:02:34,000
-Hey
-
-48
-00:02:35,000 --> 00:02:37,000
-U-RO-PA
+00:00:29,500 --> 00:00:30,500
+Oh!
 
 
