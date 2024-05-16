@@ -11,17 +11,21 @@ OpenAI_API_KEY = environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OpenAI_API_KEY)
 
 def main():
+
+ 
+
     st.title("Interactive Video 🎥")
     # which_lang = st.empty()
 
-    language = st.selectbox("Tumọ si:   Traduire en:    Translate to:", ["English", "Yoruba", "French"])
+    language = st.selectbox(
+        "Tumọ si:   Traduire en:    Translate to:", ["English", "Yoruba", "French"]
+    )
     # if language == "English":
     #     which_lang = st.write("which language do you want to translate to? 🌍")
     # if language == "Yoruba":
     #     st.write("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! 🇳🇬")
     # if language == "French":
     #     st.write("French: dans quelle langue souhaitez-vous traduire?")
-
 
     videoholder = st.empty()
     if language == "English":
@@ -31,13 +35,12 @@ def main():
     elif language == "French":
         url_input_box = "Entrez l'URL de la vidéo YouTube"
 
-
     url = st.text_input(url_input_box)
 
-    if 'video_url' not in st.session_state:
-        st.session_state['video_url'] = None
-    if 'transcription' not in st.session_state:
-        st.session_state['transcription'] = None
+    if "video_url" not in st.session_state:
+        st.session_state["video_url"] = None
+    if "transcription" not in st.session_state:
+        st.session_state["transcription"] = None
 
     if language == "English":
         upload_button_text = "Upload Video"
@@ -48,35 +51,48 @@ def main():
 
     if st.button(upload_button_text):
         if url:
-            transcription = get_youtube_audio.get_english_transcription_from_english_youtube(url, language)
-            st.session_state['video_url'] = url
-            st.session_state['transcription'] = transcription
+            transcription = (
+                get_youtube_audio.get_english_transcription_from_english_youtube(
+                    url, language
+                )
+            )
+            st.session_state["video_url"] = url
+            st.session_state["transcription"] = transcription
         else:
             st.write("Please enter a valid YouTube video URL.")
-    
-    if st.session_state['video_url']:
-        videoholder.video(st.session_state['video_url'])
-        if st.session_state['transcription']:
+
+    if st.session_state["video_url"]:
+        videoholder.video(st.session_state["video_url"])
+        if st.session_state["transcription"]:
             # st.write("Transcription:")
             with st.expander("Transcription:", expanded=False):
-                st.write(st.session_state['transcription'])
+                st.write(st.session_state["transcription"])
             # st.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ! \n English: Your video has been made interactive, ask questions about it!", icon="❔")
+            Warning_holder = st.empty()
             Warning_holder = st.empty()
         else:
             st.write("Failed to fetch transcription.")
 
-
         if language == "English":
-            Warning_holder.warning("Your video has been made interactive, ask questions about it!", icon='❔')                    
+            Warning_holder.warning(
+                "Your video has been made interactive, ask questions about it!",
+                icon="❔",
+            )
         elif language == "Yoruba":
-            Warning_holder.warning("Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ!", icon='❔')
+            Warning_holder.warning(
+                "Yoruba: Fidio rẹ ti jẹ ibaraenisepo, beere awọn ibeere nipa rẹ!",
+                icon="❔",
+            )
         elif language == "French":
-            Warning_holder.warning("Français: Votre vidéo a été rendue interactive, posez des questions à ce sujet!", icon='❔')
-    
+            Warning_holder.warning(
+                "Français: Votre vidéo a été rendue interactive, posez des questions à ce sujet!",
+                icon="❔",
+            )
+
     question_slot = st.empty()
     answer_slot = st.empty()
 
-    with st.form('input_form'):
+    with st.form("input_form"):
         # Place the text input and the button within the form
         col1, col2 = st.columns([5, 1])
         with col1:
@@ -105,6 +121,7 @@ def main():
             st.write(answer)
         else:
             st.warning("Please enter a question.")
+
 
 if __name__ == "__main__":
     main()
