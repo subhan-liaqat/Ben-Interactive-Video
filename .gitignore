@@ -5,3 +5,4 @@ gsc_creds.json
 ./temp
 ./temp_dub
 input_video.mp3
+__pycache__*
