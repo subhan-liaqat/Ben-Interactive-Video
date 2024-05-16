@@ -16,7 +16,7 @@ def main():
 
     st.set_page_config(page_title="Sub/Dub Video", page_icon="📺")
 
-    st.title("Subtitle Video")
+    st.title("Subtitle / Dubbed Video 📺" )
 
     language = st.selectbox(
         "Tumọ si:   Traduire en:    Translate to:", ["English", "Yoruba", "French"]
