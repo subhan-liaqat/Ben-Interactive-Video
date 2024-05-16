@@ -55,24 +55,11 @@ def translate_to_english(text):
     output = translate_client.translate(text, target_language=target)["translatedText"]
     return output
 
-
 # def translate_yoruba_to_english(text):
 #     translate_client = translate.Client()
 #     target = "en"
 #     output = translate_client.translate(text, target_language=target)["translatedText"]
 #     return output
-
-def translate_to_french(text):
-    translate_client = translate.Client()
-    target = "fr"
-    output = translate_client.translate(text, target_language=target)["translatedText"]
-    return output
-
-def translate_to_english(text):
-    translate_client = translate.Client()
-    target = "en"
-    output = translate_client.translate(text, target_language=target)["translatedText"]
-    return output
 
 # Translates to any language, pass language as paramter: fr, yo, en
 def translate_english_to(text, countryISO='yo'):
@@ -80,8 +67,6 @@ def translate_english_to(text, countryISO='yo'):
     target = countryISO
     output = translate_client.translate(text, target_language=target)["translatedText"]
     return output
-
-
 
 # yoruba = translate_english_to_yoruba("Benin Interactive Video")
 # print(yoruba)
@@ -98,5 +83,3 @@ def translate_english_to(text, countryISO='yo'):
 
 # english = translate_to_english(yoruba)
 # print(english)
-
-

@@ -1,192 +1,76 @@
 1
-00:00:00,000 --> 00:00:04,000
-Yuroopu, jẹ ki a pejọ!
+00:00:00,000 --> 00:00:03,000
+Fidio yii jẹ...
 
 2
-00:00:04,000 --> 00:00:07,000
-Europe-bye-bye, Europe-bye-bye
+00:00:03,000 --> 00:00:04,000
+30 aaya gun.
 
 3
-00:00:07,000 --> 00:00:09,000
-O jẹ bayi tabi rara!
+00:00:04,000 --> 00:00:04,500
+Kini yẹn?
 
 4
-00:00:11,000 --> 00:00:13,000
-Yato si, Europe-pa-pa
+00:00:04,500 --> 00:00:05,500
+O gun 30 aaya.
 
 5
-00:00:13,000 --> 00:00:16,000
-Kaabo si Europe, duro nibi titi emi o fi kú
+00:00:05,500 --> 00:00:07,000
+A ko ni akoko lati gba pọ
 
 6
-00:00:16,000 --> 00:00:19,000
-Europe-bye-bye, Europe-bye-bye
+00:00:07,000 --> 00:00:08,500
+nitori o gun 30 aaya.
 
 7
-00:00:19,000 --> 00:00:22,000
-Kaabo si Europe, duro nibi titi emi o fi kú
+00:00:08,500 --> 00:00:10,000
+Gbogbo yin ni ọpọlọpọ awọn nkan lati ṣe.
 
 8
-00:00:22,000 --> 00:00:25,000
-Europe-bye-bye, Europe-bye-bye
+00:00:10,000 --> 00:00:11,500
+Ti o ni idi ti Mo wa ni kukuru pẹlu rẹ.
 
 9
-00:00:25,000 --> 00:00:28,000
-Ṣabẹwo si awọn ọrẹ mi ni Ilu Faranse, tabi sare lọ si Vienna
+00:00:11,500 --> 00:00:14,500
+Nítorí náà, mo ti pinnu láti má ṣe bí ọ
 
 10
-00:00:28,000 --> 00:00:31,000
-Mo fẹ lati lọ kuro ni Netherlands, ṣugbọn iwe irinna mi ti sọnu
+00:00:14,500 --> 00:00:16,000
+nipa jije 30 aaya gun.
 
 11
-00:00:31,000 --> 00:00:34,000
-O da, Emi ko nilo fisa lati wa pẹlu rẹ
+00:00:16,000 --> 00:00:17,500
+Bẹẹni, eyi jẹ iṣẹju-aaya 30 gigun.
 
 12
-00:00:34,000 --> 00:00:37,000
-Nitorinaa gba ọkọ akero lọ si Polandii tabi ọkọ oju irin si Berlin
+00:00:17,500 --> 00:00:19,000
+A ko ni akoko lati wọ thong kan
 
 13
-00:00:37,000 --> 00:00:40,000
-Emi ko ni owo fun Paris, nitorina ni mo ṣe lo oju inu mi
+00:00:19,000 --> 00:00:20,500
+tabi mu siga kan bong tabi mu ping pong.
 
 14
-00:00:40,000 --> 00:00:43,000
-Jọwọ ṣe o ni Euro kan? Sọ o ṣeun ati jọwọ
+00:00:20,500 --> 00:00:22,000
+Otitọ ni ohunkohun ti Mo ṣe
 
 15
-00:00:43,000 --> 00:00:46,000
-Mo padanu ninu ohun gbogbo ayafi akoko
+00:00:22,000 --> 00:00:23,500
+tabi ohun ti mo fẹ lati sọ fun nyin.
 
 16
-00:00:46,000 --> 00:00:49,000
-Beena mo n rin irin ajo lojoojumo, nitori aye ni temi
+00:00:23,500 --> 00:00:25,000
+O jẹ gbogbo rẹ fun asan nitori o rii
 
 17
-00:00:49,000 --> 00:00:52,000
-Kaabo si Europe, duro nibi titi emi o fi kú
+00:00:25,000 --> 00:00:28,000
+awọn idiwọn ṣeto lori mi
 
 18
-00:00:52,000 --> 00:00:55,000
-Europe-bye-bye, Europe-bye-bye
+00:00:28,000 --> 00:00:29,500
+ti jije 30 aaya gun.
 
 19
-00:00:55,000 --> 00:00:58,000
-Kaabo si Europe, duro nibi titi emi o fi kú
-
-20
-00:00:58,000 --> 00:01:01,000
-Europe-bye-bye, Europe-bye-bye
-
-21
-00:01:01,000 --> 00:01:04,000
-Europe-pa-pa-pa-pa-pa-pa-pa
-
-22
-00:01:04,000 --> 00:01:07,000
-Europe-bye-bye-bye
-
-23
-00:01:07,000 --> 00:01:10,000
-Europe-bye-bye-bye-bye-bye-bye-bye
-
-24
-00:01:10,000 --> 00:01:13,000
-U-RO-PA
-
-25
-00:01:13,000 --> 00:01:16,000
-Mo wa ni Germany, abit, Mo wa bẹ gbogbo rẹ
-
-26
-00:01:16,000 --> 00:01:19,000
-Iozono ni Ilu Italia, bẹẹni, ṣugbọn o tun dun
-
-27
-00:01:19,000 --> 00:01:22,000
-Mo n sá kuro lọdọ ara mi, ni rilara ti a gba mi mọra ni gbogbo ọjọ
-
-28
-00:01:22,000 --> 00:01:25,000
-Bẹẹni, Mo paapaa fun eniyan ni owo, ṣugbọn ko si ẹnikan lati ran mi lọwọ
-
-29
-00:01:25,000 --> 00:01:28,000
-Emi ko fẹ escargot, Emi ko fẹ eja ati awọn eerun
-
-30
-00:01:28,000 --> 00:01:31,000
-Ko nilo pael, bẹẹni, rara, Emi ko paapaa mọ kini iyẹn jẹ
-
-31
-00:01:31,000 --> 00:01:34,000
-Tan redio, Mo gbọ Stromae pẹlu baba Ute
-
-32
-00:01:34,000 --> 00:01:37,000
-Yoo ko duro titi ti wọn yoo fi sọ bẹẹni, bẹẹni, o n ṣe daradara, abi bẹẹkọ?
-
-33
-00:01:37,000 --> 00:01:40,000
-Kaabo si Europe, duro nibi titi emi o fi kú
-
-34
-00:01:40,000 --> 00:01:43,000
-Europe-bye-bye, Europe-bye-bye
-
-35
-00:01:43,000 --> 00:01:46,000
-Kaabo si Europe, duro nibi titi emi o fi kú
-
-36
-00:01:46,000 --> 00:01:49,000
-Europe-bye-bye, Europe-bye-bye
-
-37
-00:01:49,000 --> 00:01:52,000
-Europe-pa-pa-pa-pa-pa-pa-pa
-
-38
-00:01:52,000 --> 00:01:55,000
-Europe-bye-bye-bye, hey
-
-39
-00:01:55,000 --> 00:01:58,000
-Europe-pa-pa-pa-pa-pa-pa-pa
-
-40
-00:01:58,000 --> 00:02:01,000
-U-RO-PA
-
-41
-00:02:01,000 --> 00:02:04,000
-Europe-pa-pa-pa-pa-pa-pa-pa
-
-42
-00:02:04,000 --> 00:02:07,000
-Pa-pa-pa-pa-pa-pa-pa-pa-pa
-
-43
-00:02:07,000 --> 00:02:10,000
-Pa-pa-pa-pa-pa-pa-pa-pa-pa
-
-44
-00:02:10,000 --> 00:02:13,000
-Bye-bye-bye-bye-bye-bye-bye
-
-45
-00:02:13,000 --> 00:02:16,000
-Kaabo si Europe, ọmọkunrin
-
-46
-00:02:20,000 --> 00:02:22,000
-Titi di
-
-47
-00:02:32,000 --> 00:02:34,000
-Hey
-
-48
-00:02:35,000 --> 00:02:37,000
-U-RO-PA
+00:00:29,500 --> 00:00:30,500
+Oh!
 
