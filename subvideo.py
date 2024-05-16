@@ -70,13 +70,13 @@ def Translate_srt(target_language):
     input_srt = "temp/transcript.srt"
     output_srt = "temp/translated.srt"
 
-    subs = pysrt.open(input_srt, encoding="utf-8")
+    subs = pysrt.open(input_srt, encoding="ISO-8859-1")
 
     for sub in subs:
         translatedSub = translate_english_to(sub.text, target_language)
         sub.text = translatedSub
 
-    subs.save(output_srt, encoding="utf-8")
+    subs.save(output_srt, encoding="ISO-8859-1")
 
     print("Created Translated SRT")
 
@@ -110,7 +110,7 @@ def addTranslationsForVideoSubsAndORDubs(url, language, dubbed, subbed):
     extract_audio_from_youtube(url)
     Create_SRT()
     Translate_srt(language)
-    
+
     if subbed:
         add_subtitle_to_video("temp/translated.srt")
     if dubbed and subbed:
@@ -119,6 +119,6 @@ def addTranslationsForVideoSubsAndORDubs(url, language, dubbed, subbed):
         create_dubs_for_video("temp/input_video.mp4")
 
 
-url = "https://www.youtube.com/watch?v=BZP1rYjoBgI"
-language = "fr"
-create_subbed_and_dubbed_video(url, language)
+# url = "https://www.youtube.com/watch?v=BZP1rYjoBgI"
+# language = "fr"
+# create_subbed_and_dubbed_video(url, language)

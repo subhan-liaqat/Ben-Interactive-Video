@@ -44,16 +44,27 @@ def main():
     elif language == "French":
         upload_button_text = "Télécharger la vidéo"
 
+    translation_choice = st.selectbox(
+        "Dubbed/Subbed", ["Subtitles", "Dubbed", "Dubbed and Subbed"]
+    )
+
     if st.button(upload_button_text):
         if url:
             
             st.session_state["video_url"] = url
-
+        
             #toCountryISO converts English -> en
-            subvideo.create_subbed_video(url, toCountrISO[language])
+            if translation_choice == "Dubbed":
+                subvideo.create_dubbed_video(url, toCountrISO[language])
+                st.video('./temp_dub/dubbed_video.mp4')
+            elif translation_choice == "Dubbed and Subbed":
+                subvideo.create_subbed_and_dubbed_video(url, toCountrISO[language])
+                st.video('./temp_dub/dubbed_video.mp4')
+            elif translation_choice == "Subtitles":
+                subvideo.create_subbed_video(url, toCountrISO[language])
+                st.video('./temp/output_subbed.mp4')
 
-            st.video('./temp/output_subbed.mp4')
-          
+           
         else:
             st.write("Please enter a valid YouTube video URL.")
 
